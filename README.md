@@ -17,8 +17,6 @@ npm run start
 # Start production
 npm run start:prod
 
-# Run tests
-npm run test
 ```
 
 ## License
