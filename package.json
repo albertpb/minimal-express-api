@@ -1,0 +1,71 @@
+{
+  "name": "minimal-express-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "start:prod",
+  "scripts": {
+    "start": "better-npm-run start-development",
+    "start:prod": "better-npm-run start-production",
+    "test": "echo 'no tests'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertpb/express-rest-api.git"
+  },
+  "author": "Alberto Palumbo (https://github.com/albertpb/)",
+  "keywords": [
+    "express",
+    "es6",
+    "rest",
+    "api"
+  ],
+  "homepage": "https://github.com/albertpb/express-rest-api.git",
+  "bugs": {
+    "url": "https://github.com/albertpb/express-rest-api.git/issues"
+  },
+  "betterScripts": {
+    "start-development": {
+      "command": "nodemon -w src --exec babel-node src",
+      "env": {
+        "NODE_ENV": "development",
+        "HOST": "0.0.0.0",
+        "PORT": "3000"
+      }
+    },
+    "start-production": {
+      "command": "nodemon -w src --exec babel-node src",
+      "env": {
+        "NODE_ENV": "production",
+        "HOST": "0.0.0.0",
+        "PORT": "3000"
+      }
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "better-npm-run": "0.1.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.3",
+    "prettier-eslint": "^8.8.2"
+  }
+}
